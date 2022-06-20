@@ -1,1 +1,38 @@
-<p>hotel-details works!</p>
+<!-- <p>hotel-details works!</p>
+<div class="card">
+  <div>
+    <img src="/assets/images/bbsr.png" class="hotel" />
+    <h1>hi</h1>
+  </div>
+  <div>
+    <div class="name">
+       <div>
+      <h1>{{ hotel.hotelName |uppercase}}</h1>
+      <h2>{{hotel.address.city}}</h2>
+      <h4>{{hotel.address.properAddress}}</h4>
+      <h6>{{hotel.address.state}} {{hotel.address.pinCode}}</h6>
+</div>
+    </div>
+    <!-- <div *ngFor="let details of hotel.address | keyvalue">
+      {{details.key}}
+    </div> -->
+  <!-- </div>
+</div> -->
+
+<mat-card>
+  
+    <mat-card-header>
+        <div mat-card-avatar>
+            <img src="/assets/images/bbsr.png" class="hotel" />
+        </div>
+        <mat-card-title>{{ hotel.hotelName |uppercase}}</mat-card-title>
+        <mat-card-subtitle></mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        {{hotel.address.properAddress}}{{hotel.address.state}} {{hotel.address.pinCode}}
+    </mat-card-content>
+    <mat-card-actions>
+        <!-- <button mat-button>actionOne</button>
+        <button mat-button>actionTwo</button> -->
+        </mat-card-actions>
+</mat-card>

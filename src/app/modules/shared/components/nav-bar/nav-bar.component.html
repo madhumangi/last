@@ -1,7 +1,4 @@
-    <!-- <img src="/assets/images/welcome.jpg" class="bg"> -->
-<body>
-    
-
+    <!-- <img src="/assets/images/welcome.jpg" class="bg"> -->  
 <mat-toolbar color="primary">
     <div [ngClass]="'nav'" >
     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" class="svg">
@@ -13,7 +10,7 @@
 </button>
 </div>
 <div [ngClass]="'nav'">
-        <button mat-icon-button routerLink="/login">
+        <button mat-icon-button routerLink="/login" routerLinkActive="true">
         <mat-icon >login</mat-icon>
         Login
         </button>
@@ -23,9 +20,6 @@
         </button>
     </div>
  </mat-toolbar>
-</body>
-<footer>
-    <p>
-        @Copyrights
-    </p>
-</footer>
+ 
+ <!-- <router-outlet></router-outlet> -->
+

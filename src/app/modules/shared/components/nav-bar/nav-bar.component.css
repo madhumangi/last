@@ -8,14 +8,15 @@
 .mat-toolbar.mat-primary {
     background: black;
     color: white;
-    position: fixed;
+    /* position: fixed; */
 }
 .mat-flat-button, .mat-raised-button, .mat-fab, .mat-mini-fab {
-    color: rgb(255 252 252 / 87%);
+    color: black;
     background-color: #59bfc4;
 }
 .mat-raised-button{
     border-radius: 30px;
+    border: white solid 2px;
 }
 div{
     display: flex;
@@ -44,11 +45,7 @@ div{
         background-image: border;
         background-attachment: scroll;
     } */
-footer{
-    background-color: black;
-    color: white;
-    position: relative;
-}
+
 /* header{
     position: fixed;
 } */

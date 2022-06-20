@@ -1,8 +1,16 @@
-h1{
+h1,h4{
     color: #0f1d6c;
     text-align: center;
     font-family: 'Indie Flower', cursive;
-    padding-top: 50px;
+    padding-top: 100px;
+    letter-spacing: 15px;
+    font-family: 'Indie Flower', cursive;
+}
+h2{
+    color: #0f1d6c;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    padding-top: 100px;
     letter-spacing: 15px;
     font-family: 'Indie Flower', cursive;
 }

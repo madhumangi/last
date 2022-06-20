@@ -12,15 +12,21 @@ import { SignupComponent } from './modules/user/components/signup/signup.compone
 const routes: Routes = [
   {path:'home',component:HomeComponent},
   
-  {path:'hotels',component:HotelsComponent,
-    children:[
-        {path:'hotel-details/:id',component:HotelDetailsComponent,
-          children:[
-            {path:'facilities',component:FacilitiesComponent}
-          ]
-        },
-        {path:'booking',component:BookingComponent}
-    ]},
+   {path:'hotels',component:HotelsComponent},
+  //   children:[
+        
+  //         children:[
+  //           {path:'facilities',component:FacilitiesComponent}
+  //         ]
+  //       },
+  //       {path:'booking',component:BookingComponent}
+  //   ]},
+    {path:'hotels/:city',component:HotelsComponent
+      // children:[
+      //   {path:':'}
+      // ]  
+  },
+  {path:'hotel-details/:id',component:HotelDetailsComponent},
     {path:'login',component:LoginComponent},
     {path:'signup',component:SignupComponent},
     {path:'**',component:PageNotFoundComponent},

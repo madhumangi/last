@@ -1,1 +1,33 @@
-<p>hotels works!</p>
+<!-- <p>hotels works!</p> -->
+<mat-toolbar color="primary">
+    <!-- <div [ngClass]="'nav'" > -->
+   <h3>{{city}}</h3>
+   <!-- <div class="search"> -->
+    <!-- action="/action_page.php" -->
+    <form >
+      <input type="text" placeholder="Search for city.." name="search">
+      <button type="submit">Submit</button>
+    </form>
+  <!-- </div> -->
+ </mat-toolbar>
+ <div>
+    <mat-card *ngFor="let hotel of hotels">
+        <mat-card-header>
+            <!-- <img mat-card-md-image src="{{hotel.hotelImg}}"/> -->
+            <mat-card-title>{{hotel.hotelName|uppercase}}</mat-card-title>
+            <!-- <mat-card-subtitle>{{hotel.price|currency:"INR "}}</mat-card-subtitle> -->
+        </mat-card-header>
+        <mat-card-content>
+            {{hotel.propertyType}}<br>
+            
+            Ratings: {{hotel.ratings}}<br>
+            {{hotel.starRatings}}<br>
+            <!-- Restaurant: {{hotel.restaurantIncluded}}<br> -->
+            Total Rooms: {{hotel.noOfRooms}}
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button [routerLink]="['/hotel-details',hotel.hotelId]">View Details</button>
+            </mat-card-actions>
+    </mat-card>
+ </div>
+
