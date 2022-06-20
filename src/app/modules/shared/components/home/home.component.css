@@ -1,0 +1,18 @@
+h1{
+    color: #0f1d6c;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    padding-top: 50px;
+    letter-spacing: 15px;
+    font-family: 'Indie Flower', cursive;
+}
+.card{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+mat-card{
+    background-color: #8993ca;
+    color: #fff;
+    text-align: center;
+}

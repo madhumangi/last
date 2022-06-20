@@ -1,0 +1,54 @@
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.mat-toolbar.mat-primary {
+    background: black;
+    color: white;
+    position: fixed;
+}
+.mat-flat-button, .mat-raised-button, .mat-fab, .mat-mini-fab {
+    color: rgb(255 252 252 / 87%);
+    background-color: #59bfc4;
+}
+.mat-raised-button{
+    border-radius: 30px;
+}
+div{
+    display: flex;
+    justify-content: space-between;
+}
+.mat-toolbar-row, .mat-toolbar-single-row {
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 16px;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: space-between;
+}
+.first{
+    margin: 20px;
+}
+
+.svg{
+    fill:white;
+}
+/* body{
+        background-image: url(/assets/images/welcome.jpg);
+        background-size: cover;
+        background-image: border;
+        background-attachment: scroll;
+    } */
+footer{
+    background-color: black;
+    color: white;
+    position: relative;
+}
+/* header{
+    position: fixed;
+} */
