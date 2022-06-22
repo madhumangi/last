@@ -22,6 +22,10 @@ div{
     display: flex;
     justify-content: space-between;
 }
+.mat-icon{
+    padding-bottom: 5px;
+    margin: 2px;
+}
 .mat-toolbar-row, .mat-toolbar-single-row {
     display: flex;
     box-sizing: border-box;
@@ -34,10 +38,6 @@ div{
 }
 .first{
     margin: 20px;
-}
-
-.svg{
-    fill:white;
 }
 /* body{
         background-image: url(/assets/images/welcome.jpg);

@@ -16,6 +16,14 @@ import { PageNotFoundComponent } from './modules/shared/components/page-not-foun
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from './modules/shared/material/material.module';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { SideNavComponent } from './modules/shared/components/side-nav/side-nav.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatListModule } from '@angular/material/list';
+import { HotelViewComponent } from './modules/hotel/components/hotel-view/hotel-view.component';
 
 
 @NgModule({
@@ -29,7 +37,9 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     HotelsComponent,
     HotelDetailsComponent,
     FacilitiesComponent,
-    BookingComponent
+    BookingComponent,
+    SideNavComponent,
+    HotelViewComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +47,13 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
-    MaterialModule
+    MaterialModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatMenuModule,
+    MatIconModule,
+    MatDividerModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

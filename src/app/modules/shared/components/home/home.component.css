@@ -20,7 +20,45 @@ h2{
     padding-top: 50px;
 }
 mat-card{
-    background-color: #8993ca;
+    background-color: #89c2ca;
     color: #fff;
     text-align: center;
+    border: solid black 2px;
 }
+/* .mat-card-header{
+    padding-right: 35px;
+    padding-top: ;
+} */
+/* .page{
+    color: white;
+    padding: 0 1 rm;
+    background-color: #f1f5f9;
+    
+}
+.heading{
+    min-height: 140px;
+    background-color: #1e293b;
+    margin: 0 -1rem;
+    font-size: 36px;
+    &.shadow{
+        min-height: calc(100vh - 178px);
+        border-radius: 10px;
+        margin-top: -2rem;
+        background: white;
+        color: black;
+        font-size: 2rem;
+    }
+}
+.shadow{
+    min-height: calc(100vh - 178px);
+    border-radius: 10px;
+    margin-top: -2rem;
+    background: white;
+    color: black;
+    font-size: 2rem;
+}
+.content{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */

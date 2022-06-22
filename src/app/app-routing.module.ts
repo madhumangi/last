@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BookingComponent } from './modules/hotel/components/booking/booking.component';
 import { FacilitiesComponent } from './modules/hotel/components/facilities/facilities.component';
 import { HotelDetailsComponent } from './modules/hotel/components/hotel-details/hotel-details.component';
+import { HotelViewComponent } from './modules/hotel/components/hotel-view/hotel-view.component';
 import { HotelsComponent } from './modules/hotel/components/hotels/hotels.component';
 import { HomeComponent } from './modules/shared/components/home/home.component';
 import { PageNotFoundComponent } from './modules/shared/components/page-not-found/page-not-found.component';
@@ -26,7 +27,10 @@ const routes: Routes = [
       //   {path:':'}
       // ]  
   },
-  {path:'hotel-details/:id',component:HotelDetailsComponent},
+  {path:'hotel-view/:facility',component:HotelViewComponent},  
+  {path:'hotel-view/:propertyType',component:HotelViewComponent},  
+  {path:'hotel-view/:starRatings',component:HotelViewComponent},  
+    {path:'hotel-details/:id',component:HotelDetailsComponent},
     {path:'login',component:LoginComponent},
     {path:'signup',component:SignupComponent},
     {path:'**',component:PageNotFoundComponent},

@@ -1,11 +1,15 @@
-<h1>WELCOME TO KAKSH</h1>
+<!-- <div class="page"> -->
+<!-- <div class="heading"></div> -->
+    <h1>WELCOME TO KAKSH</h1>
  <h4>The booking app for your hotel stay</h4>
-<h2>BOOK YOUR STAY</h2>
+ <!-- <div class="shadow"> -->
+<!-- <div class="content"> -->
+    <h2>BOOK YOUR STAY</h2>
 <div [ngClass]="'card'">
 
     <mat-card *ngFor="let city of cities" ngClass="city">
         <mat-card-header>
-            <div mat-card-avatar></div>
+            <!-- <div mat-card-avatar></div> -->
             <!-- <img mat-card-image src="assets/images/hyderabad.jpg"> -->
             <mat-card-title *ngIf="city" [routerLink]="['/hotels',city.toUpperCase()]">{{city|uppercase}}</mat-card-title>
              <!-- <mat-card-subtitle>sub-header</mat-card-subtitle>  -->
@@ -18,5 +22,7 @@
             <button mat-button>actionTwo</button>
             </mat-card-actions>  -->
     </mat-card>
-
 </div>
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->

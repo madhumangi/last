@@ -1,0 +1,56 @@
+.logo{
+    height: 57px;
+    display: flex;
+    justify-content: center;
+}
+mat-divider{
+    border-top-width: 1px;
+    border-color: white;
+}
+.mat-list-item{
+    color: white;
+    font-size: 0.8rem;
+    height: 40px;
+    margin-bottom: 4px;
+    border-radius: 5px;
+    margin: 0 8px;
+}
+.mat-list-base{
+    overflow: hidden;
+}
+.mat-list-tem-content{
+            border-radius: 5px;
+            margin : 0 8px;   
+        }
+.mat-icon{
+    margin: 8px;
+    padding-bottom: 5px;
+}
+a:hover {
+    background: #43caca !important;
+}
+.mat-subheader{
+    color: aqua;
+    font-weight: 100;
+    font-size: 15px;
+    letter-spacing: 1px;
+
+}
+.first{
+    margin: 20px;
+    color: white;
+    font-size:25px;
+}
+
+.svg{
+    padding-top: 15px;
+    fill:white;
+    
+}
+.propertyType-container a{
+    color: white;
+    /* position: absolute; */
+    left: 50px;
+    margin-left: 50px;
+    height: 50px;
+}

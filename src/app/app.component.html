@@ -1,7 +1,14 @@
-<app-nav-bar></app-nav-bar>
-<router-outlet></router-outlet>
 <!-- <footer>
     <p>
         @Copyrights
     </p>
 </footer> -->
+<mat-drawer-container>
+    <mat-drawer class="side" mode="side" [opened]="sideBarOpen">
+        <app-side-nav></app-side-nav>
+    </mat-drawer>
+    <mat-drawer-content>
+        <app-nav-bar (toggleSidebarForMe)="sideBarToggler()"></app-nav-bar>
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+</mat-drawer-container>

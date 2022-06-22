@@ -1,10 +1,10 @@
     <!-- <img src="/assets/images/welcome.jpg" class="bg"> -->  
 <mat-toolbar color="primary">
+    
     <div [ngClass]="'nav'" >
-    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" class="svg">
-        <path d="M0 0h24v24H0z" fill="none"/><path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"/>
-    </svg>
-   <span class="first">KAKSH</span>
+        <button mat-icon-button (click)="toggleSidebar()">
+            <mat-icon>menu</mat-icon>
+          </button>
    <button mat-icon-button>
    <mat-icon routerLink="/home">home</mat-icon>Home
 </button>
@@ -21,5 +21,20 @@
     </div>
  </mat-toolbar>
  
- <!-- <router-outlet></router-outlet> -->
+
+ <!-- <div class="sidenav">
+     <div class="logo-container">
+        <button class="logo"></button>
+         <div class="logo-text"></div> 
+        <button class="btn-close"></button>
+</div>
+    <ul class="sidenav-nav">
+        <li class="sidenav-nav-item">
+            <a href="" class="sidenav-nav-link"> 
+                <i class="sidenav-link-icon"></i> 
+                <span class="sidenav-link-text"></span>
+            </a>
+        </li>
+    </ul>
+</div> -->
 

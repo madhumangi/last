@@ -7,3 +7,18 @@
     width: 100%;
     bottom: 0px;
 } */
+:host{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.side{
+    /* width: 180px; */
+    background-color: black;
+    transform: translateX(-180px);
+    overflow: hidden;
+}
+mat-drawer-container{
+    height: 100%;
+}
+

@@ -1,13 +1,13 @@
 <!-- <p>hotels works!</p> -->
-<mat-toolbar color="primary">
+<mat-toolbar >
     <!-- <div [ngClass]="'nav'" > -->
    <h3>{{city}}</h3>
    <!-- <div class="search"> -->
     <!-- action="/action_page.php" -->
-    <form >
-      <input type="text" placeholder="Search for city.." name="search">
-      <button type="submit">Submit</button>
-    </form>
+    <div class="search" >
+      <input matInput type="text" placeholder="Search for city.." name="search">
+      <button mat-stroked-button type="submit">Submit</button>
+    </div>
   <!-- </div> -->
  </mat-toolbar>
  <div>

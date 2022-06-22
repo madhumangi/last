@@ -24,3 +24,9 @@ h2,h4{
     height: 250px;
     width: auto;
 }
+.mat-card{
+    padding: 50px;
+}
+div{
+    padding: 60px;
+}
