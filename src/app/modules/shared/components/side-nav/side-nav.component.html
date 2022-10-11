@@ -17,21 +17,47 @@
   </div>
   <mat-divider></mat-divider>
  <h2 matSubheader class="header">Filter Hotels By</h2>
-   <a mat-list-item (click)="getFilterTypes('Property Type')" > Property Type</a>
-        <div class="propertyType-container" *ngFor="let filter of filterTypes" >
-            <button [routerLink]="['/hotel-view',filter]">{{ filter }}</button>
-        </div>
-  <a mat-list-item (click)="getFilterTypes('Star Ratings')"> Star Ratings</a>
-        <div class="propertyType-container" *ngFor="let star of filterTypes" >
-            <a href="#">{{ star }}</a><br>
-        </div>
-  <!-- <a mat-list-item (click)="getFilterTypes('Property Type')"> Price</a> -->
-  <a mat-list-item (click)="getFilterTypes('Facilitities')"> Facilities</a>
-        <div class="propertyType-container" *ngFor="let facility of filterTypes" >
-            <a href="#">{{ facility }}</a><br>
-        </div> 
-  
+ <!-- <div>
+    <div class="dropdown">
+        <a mat-list-item (click)="getFilterTypes(keys[6])" class="dropbtn" (mouseenter)="show = !show"> Property Type</a>
+            <div class="dropdown-content" *ngFor="let filter of filterTypes" >
+                <span *ngIf ="show">
+                <a [routerLink]="['/hotel-view',keys[6],filter]">{{ filter }}</a>
+            </span>
+            </div>
+    </div>
+    <div class="dropdown">
+        <a mat-list-item (click)="getFilterTypes(keys[5])" class="dropbtn"> Star Ratings</a>
+            <div class="dropdown-content" *ngFor="let star of filterTypes" >
+                <a href="#">{{ star }}</a><br>
+            </div>
+    </div>
+  <a mat-list-item (click)="getFilterTypes('Property Type')"> Price</a>
+    <div class="dropdown">
+        <a mat-list-item (click)="getFilterTypes('Facilitities')" class="dropbtn"> Facilities</a>
+            <div class="dropdown-content" *ngFor="let facility of filterTypes" >
+                <a href="#">{{ facility }}</a><br>
+            </div> 
+    </div>
+</div> -->
+<mat-list-item *ngFor="let item of choices " >
+    <span mat-flat-button (click)="getFilterTypes(item)" [matMenuTriggerFor]="menu">
+        {{item}}
+    </span>
+    <mat-menu #menu="matMenu" [ngStyle]="{'background-color':'#43caca'}">
+        <button mat-menu-item *ngFor="let filter of filterTypes" [routerLink]="['/hotel-view',item,filter]">{{filter}}</button>
+    </mat-menu>
+</mat-list-item>
 </mat-nav-list>
 <!-- <div class="propertyType-container" *ngFor="let property of propertyTypes" (toggleSidebarForMe)="sideBarToggler()">
     <a href="#">{{ property }}</a><br>
 </div> -->
+
+<!-- <mat-list-item *ngFor="let item of choices " >
+    <button mat-flat-button (click)="showFiller(item)" [matMenuTriggerFor]="menu">
+        {{item | uppercase}}
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item *ngFor="let dat of value" (click) ="getFilter(item,dat)">{{dat}}</button>
+    </mat-menu>
+</mat-list-item> -->

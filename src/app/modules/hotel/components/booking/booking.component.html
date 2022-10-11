@@ -1,1 +1,66 @@
-<p>booking works!</p>
+<!-- <form [formGroup]="bookingForm" class="booking">
+    <label for="persons" >No of persons:</label>
+<input type="number" id="persons" name="persons" min="1" max="50" #person formControlName="persons">
+<span></span>
+<br>
+<label for="checkIn" formControlName="checkIn" >Select Check In Date</label>
+<input type="date" id="checkIn" name="checkIn">
+<br>
+<label for="checkOut" formControlName="checkOut" >Select Check Out Date</label>
+<input type="date" id="checkOut" name="checkOut">
+<br>
+<h4>Price Per Day: {{price|currency}}</h4>
+<br>
+<h3>Total: {{price*convertInt(person.value)}}</h3>
+<button mat-raised-button onclick="bookRoom(bookingForm.value)">Book</button>
+</form> -->
+<button onclick="history.back()" class="back"><mat-icon ><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M13.5 21H6V17H13.5C15.43 17 17 15.43 17 13.5S15.43 10 13.5 10H11V14L4 8L11 2V6H13.5C17.64 6 21 9.36 21 13.5S17.64 21 13.5 21Z" />
+  </svg></mat-icon></button>
+
+<div class="form-group">
+    <div class="col-form-group">
+        <h2>Booking Form</h2>
+<form [formGroup]="bookingForm" (ngSubmit)="bookRoom(bookingForm)" class="form-control">
+
+    <div mat-form-field appearance="outline" class="inputs">
+      <mat-label>No of Persons</mat-label>
+      <input matInput placeholder="Enter no. of persons" type="number" formControlName="persons" class="input-field">
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint></mat-hint>
+    </div>
+
+
+    <div mat-form-field appearance="outline" class="inputs" >
+      <mat-label>Check In Date </mat-label>
+      <input matInput  type="date" formControlName="checkIn" class="input-field">
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint></mat-hint>
+    </div>
+
+
+    <div mat-form-field appearance="outline" class="inputs">
+      <mat-label>Check Out Date </mat-label>
+      <input matInput  type="date"  formControlName="checkOut" class="input-field">
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <mat-hint></mat-hint>
+    </div>
+
+
+    <div mat-form-field appearance="outline" class="inputs">
+      <mat-label>Price Per Day</mat-label>
+      <mat-hint class="price">{{price|currency}}</mat-hint>
+    </div>
+
+    <div mat-form-field appearance="outline" class="inputs">
+        <mat-label>Total Price</mat-label>
+        <mat-hint class="total">{{price|currency}}</mat-hint>
+      </div>
+
+
+<span class="mat-filler">
+    <button mat-raised-button [ngStyle]="{'background-color': 'black' ,'color':'#fff'}">Book</button>
+</span>
+</form>
+    </div>
+</div>

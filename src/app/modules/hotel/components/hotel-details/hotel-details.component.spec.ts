@@ -1,4 +1,5 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { execPath } from 'process';
 
 import { HotelDetailsComponent } from './hotel-details.component';
 
@@ -22,4 +23,12 @@ describe('HotelDetailsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have one hotel details',()=>{
+    expect(component.hotel!=null);
+  });
+  // it('should render one hotel details', () => {
+  //   fixture.detectChanges();
+  //   const e1=fixture.
+  // });
 });

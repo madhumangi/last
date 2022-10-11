@@ -13,7 +13,7 @@ import { FacilitiesComponent } from './modules/hotel/components/facilities/facil
 import { BookingComponent } from './modules/hotel/components/booking/booking.component';
 import { HomeComponent } from './modules/shared/components/home/home.component';
 import { PageNotFoundComponent } from './modules/shared/components/page-not-found/page-not-found.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './modules/shared/material/material.module';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { SideNavComponent } from './modules/shared/components/side-nav/side-nav.component';
@@ -24,6 +24,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { HotelViewComponent } from './modules/hotel/components/hotel-view/hotel-view.component';
+import { MatFormFieldControl, MatFormFieldModule } from '@angular/material/form-field';
 
 
 @NgModule({
@@ -53,7 +54,9 @@ import { HotelViewComponent } from './modules/hotel/components/hotel-view/hotel-
     MatMenuModule,
     MatIconModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    ReactiveFormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

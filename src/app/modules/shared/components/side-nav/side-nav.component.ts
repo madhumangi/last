@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { filter } from 'rxjs';
+import { Hotel } from 'src/app/models/hotel';
 import { HotelService } from 'src/app/services/hotel.service';
 
 @Component({
@@ -9,13 +10,10 @@ import { HotelService } from 'src/app/services/hotel.service';
 })
 export class SideNavComponent implements OnInit {
   constructor(private _hotelService:HotelService) { }
-
+  show = false;
+  choices:string[] = ["Property Type","Star Ratings","Ratings","Facilities"]
   filterTypes:String[]=[]
   ngOnInit(): void {
-  }
-  sideBarOpen=false;
-  sideBarToggler(){
-    this.sideBarOpen=!this.sideBarOpen;
   }
   // getPropertyTypes(){
   //   this._hotelService.getDistinctPropertyType().subscribe({
@@ -25,6 +23,7 @@ export class SideNavComponent implements OnInit {
   //   })
   // }
   getFilterTypes(filter:string){
+    console.log(filter);
       this._hotelService.getDistinctFilters(filter).subscribe({
         next:(data)=>this.filterTypes=data,
         error:()=>console.log(`error`),

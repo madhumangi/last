@@ -1,19 +1,27 @@
 <!-- <p>hotels works!</p> -->
+<div class="full">
+<div class="bg">
+</div>
+    <div class="content">
 <mat-toolbar >
+    <button onclick="history.back()" class="back"><mat-icon ><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M13.5 21H6V17H13.5C15.43 17 17 15.43 17 13.5S15.43 10 13.5 10H11V14L4 8L11 2V6H13.5C17.64 6 21 9.36 21 13.5S17.64 21 13.5 21Z" />
+      </svg></mat-icon></button>
+
     <!-- <div [ngClass]="'nav'" > -->
    <h3>{{city}}</h3>
    <!-- <div class="search"> -->
     <!-- action="/action_page.php" -->
     <div class="search" >
-      <input matInput type="text" placeholder="Search for city.." name="search">
-      <button mat-stroked-button type="submit">Submit</button>
-    </div>
+      <input matInput type="text" placeholder="Search for city.." name="search" [(ngModel)]="search">
+      <button mat-stroked-button type="submit" routerLink="/hotels/{{search|uppercase}}">Submit</button>
+    </div >
   <!-- </div> -->
  </mat-toolbar>
- <div>
+ <div class="card">
     <mat-card *ngFor="let hotel of hotels">
         <mat-card-header>
-            <!-- <img mat-card-md-image src="{{hotel.hotelImg}}"/> -->
+            <img mat-card-md-image src="{{hotel.hotelImg}}"/>
             <mat-card-title>{{hotel.hotelName|uppercase}}</mat-card-title>
             <!-- <mat-card-subtitle>{{hotel.price|currency:"INR "}}</mat-card-subtitle> -->
         </mat-card-header>
@@ -30,4 +38,6 @@
             </mat-card-actions>
     </mat-card>
  </div>
+</div>
+</div>
 

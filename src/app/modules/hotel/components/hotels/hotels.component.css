@@ -1,11 +1,17 @@
-div{
+.card{
     padding-top: 30px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 /* .search{
     float: right;
 } */
+.back{
+    border-radius: 50px;
+    background-color: #000000;
+    color: white;
+}
 .mat-toolbar-row, .mat-toolbar-single-row {
     display: flex;
     justify-content: space-between;
@@ -39,10 +45,14 @@ input{
  display: flex;
  justify-content: center;   
  padding-bottom: 25px;
+ padding-top: 30px;
 }
 mat-card{
     background-color: white;
     border: solid black 2px;
+    /* box-shadow: 0 0 40px #90ddee; */
+    box-shadow: 0px 3px 1px -2px  rgb(0, 0, 0), 0px 2px 2px 0px rgb(0, 0, 0), 0px 1px 5px 0px rgb(0, 0, 0);
+
 }
 .mat-card-actions, .mat-card-subtitle, .mat-card-content {
     display: block;
@@ -56,4 +66,12 @@ mat-card{
     box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
     background-color: #59bfc4;
     border: solid black 1px;
+}
+.bg{
+    background-image: url(/assets/images/hotelbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.full{
+    height: 100%;
 }

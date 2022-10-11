@@ -1,0 +1,71 @@
+.booking{
+    padding-left: 40%;
+    padding-top: 10%;
+}
+.form-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-control{
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+.back{
+    border-radius: 50px;
+    background-color: #000000;
+    color: white;
+}
+.col-form-group{
+    border-radius: 8px;
+    border: #50c7e1 solid 2.5px;
+    width: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.253), 0 5px 15px rgba(0, 0, 0, 0.242);
+}
+.mat-filler{
+    padding-left: 45px;
+}
+
+h2{
+    font-family: 'Cinzel', serif;
+    font-size: xx-large;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.708);
+}
+.mat-label{
+    color: black;
+}
+.inputs{
+    margin: 30px;
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    /* background: transparent; */
+}
+.price{
+    margin-left: 20px;
+    color: #50c7e1;
+}
+.total{
+    margin-left: 20px;
+    color: #000000;
+    font-size: 30px;
+    text-shadow: 0 5px 15px rgba(92, 224, 213, 0.797), 0 5px 15px rgba(89, 232, 215, 0.721);
+
+}

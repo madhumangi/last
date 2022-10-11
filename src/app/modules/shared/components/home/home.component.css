@@ -1,23 +1,58 @@
 h1,h4{
-    color: #0f1d6c;
+    color: #d7e3a8;
     text-align: center;
+    font-family: 'Indie Flower', cursive;
+    padding-top: 100px;
+    letter-spacing: 15px;
+    font-weight: bolder;
+    font-size: 30px;
+    text-shadow: 0 0 15px #000000, 0 0 5px #000000;
+    font-family: 'Indie Flower', cursive;
+}
+h2{
+    color: hsl(0, 100%, 50%);
+    text-align: center;
+    text-shadow: 0 0 3px #7bff00, 0 0 5px #84ff00;
     font-family: 'Indie Flower', cursive;
     padding-top: 100px;
     letter-spacing: 15px;
     font-family: 'Indie Flower', cursive;
 }
-h2{
-    color: #0f1d6c;
-    text-align: center;
+h3{
+    color: hsl(247, 69%, 48%);
+    text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
     font-family: 'Indie Flower', cursive;
-    padding-top: 100px;
-    letter-spacing: 15px;
+    padding-left: 100px;
+    padding-top: 60px;
     font-family: 'Indie Flower', cursive;
+    
 }
 .card{
     display: flex;
     justify-content: space-around;
-    padding-top: 50px;
+    /* padding-top: 50px; */
+}
+.heading{
+    height: 100%;
+    overflow: hidden;
+}
+.page{
+    background-image: url(/assets/images/welcome.jpg);
+    -webkit-background-seze:cover;
+    background-size: cover;
+
+    /* -webkit-backdrop-filter: blur(8px); */
+    /* backdrop-filter: blur(8px); */
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    filter: blur(3px);
+    
+}
+.content{
+    position: absolute;
+    top: 10%;
+    left: 15%;
 }
 mat-card{
     background-color: #89c2ca;

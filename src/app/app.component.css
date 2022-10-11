@@ -21,4 +21,21 @@
 mat-drawer-container{
     height: 100%;
 }
-
+.footer{
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-top: solid white 3px;
+}
+h4{
+    letter-spacing: 15px;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Cutive Mono', monospace;
+}
+.social-links{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 550px;
+    margin-right: 550px;
+}
